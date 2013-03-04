@@ -65,7 +65,6 @@ namespace rpg
                         for (int y = 1; y < 4; y++)
                         {
                             enemy[x, y] = slime[y];
-                            MessageBox.Show(slime[y].ToString());
                             spot = x;
                             enemySlime(spot);
                         }
@@ -74,7 +73,7 @@ namespace rpg
                         for (int y = 1; y < 4; y++)
                         {
                             enemy[x, y] = thief[y];
-                            MessageBox.Show(thief[y].ToString());
+                            enemyThief(spot);
                         }
 
                         break;
@@ -108,8 +107,34 @@ namespace rpg
             }
             if (spot == 2)
             {
+                Image image2 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
+                pictureBox2.BackgroundImage = image2;
             }
+            else 
+            {
+                Image image3 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
+                pictureBox3.BackgroundImage = image3;
+            }
+        }
 
+        void enemyThief(int spot)
+        {
+            if (spot == 1)
+            {
+
+                Image image1 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\thief.jpg");
+                pictureBox1.BackgroundImage = image1;
+            }
+            if (spot == 2)
+            {
+                Image image2 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\thief.jpg");
+                pictureBox2.BackgroundImage = image2;
+            }
+            else
+            {
+                Image image3 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\thief.jpg");
+                pictureBox3.BackgroundImage = image3;
+            }
         }
 
         void updateStatus()

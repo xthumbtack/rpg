@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rpg", "rpg\rpg.csproj", "{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rpg", "rpg.csproj", "{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
