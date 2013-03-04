@@ -13,7 +13,8 @@ namespace rpg
     {
         // battle objects
         int[,] enemy = new int[4, 4];
-        int groupLvl = Objects.ryanhStats[5] + Objects.mattStats[5] + Objects.aungStats[5];
+        int groupLvl = Objects.ryanhStats[5] + Objects.mattStats[5] + Objects.aungStats[5],
+            spot = 0;
         
         // enemy, atk, hp, mp
         int[] slime = new int[4] { 1, 15, 80, 1 },
@@ -28,6 +29,7 @@ namespace rpg
 
             groupLvl /= 3;
             load_enemy();
+            
             
         }
 
@@ -55,40 +57,58 @@ namespace rpg
 
         void spawnEnemy()
         {
-            for (int x = 0; x < 3; x++)
+            for (int x = 0; x < 4; x++)
             {
                 switch (enemy[x,0])
                 {
                     case 0:
-                        for (int y = 1; y < 3; y++)
+                        for (int y = 1; y < 4; y++)
                         {
-                            enemy[0, y] = slime[y];
+                            enemy[x, y] = slime[y];
+                            MessageBox.Show(slime[y].ToString());
+                            spot = x;
+                            enemySlime(spot);
                         }
                         break;
                     case 1:
-                        for (int y = 1; y < 3; y++)
+                        for (int y = 1; y < 4; y++)
                         {
-                            enemy[1, y] = thief[y];
+                            enemy[x, y] = thief[y];
+                            MessageBox.Show(thief[y].ToString());
                         }
 
                         break;
 
                     case 2:
-                        for (int y = 1; y < 3; y++)
+                        for (int y = 1; y < 4; y++)
                         {
-                            enemy[2, y] = shala[y];
+                            enemy[x, y] = shala[y];
                         }
                         break;
 
                     case 3:
-                        for (int y = 1; y < 3; y++)
+                        for (int y = 1; y < 4; y++)
                         {
-                            enemy[3, y] = dragon[y];
+                            enemy[x, y] = dragon[y];
                         }
                         break;
                 }
             }
 
+
+        }
+
+        void enemySlime(int spot)
+        {
+            if (spot == 1)
+            {
+                
+                Image image1 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
+                pictureBox1.BackgroundImage = image1;
+            }
+            if (spot == 2)
+            {
+            }
 
         }
 

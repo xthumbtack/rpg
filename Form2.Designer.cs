@@ -122,7 +122,7 @@
             // 
             this.trainLabel.AutoSize = true;
             this.trainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trainLabel.Location = new System.Drawing.Point(284, 204);
+            this.trainLabel.Location = new System.Drawing.Point(284, 206);
             this.trainLabel.Name = "trainLabel";
             this.trainLabel.Size = new System.Drawing.Size(49, 20);
             this.trainLabel.TabIndex = 59;
@@ -133,7 +133,7 @@
             // 
             this.restLabel.AutoSize = true;
             this.restLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.restLabel.Location = new System.Drawing.Point(284, 268);
+            this.restLabel.Location = new System.Drawing.Point(284, 267);
             this.restLabel.Name = "restLabel";
             this.restLabel.Size = new System.Drawing.Size(47, 20);
             this.restLabel.TabIndex = 62;
@@ -145,7 +145,7 @@
             // 
             this.shopLabel.AutoSize = true;
             this.shopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shopLabel.Location = new System.Drawing.Point(285, 235);
+            this.shopLabel.Location = new System.Drawing.Point(284, 237);
             this.shopLabel.Name = "shopLabel";
             this.shopLabel.Size = new System.Drawing.Size(51, 20);
             this.shopLabel.TabIndex = 63;
@@ -157,7 +157,7 @@
             // 
             this.fightLabel.AutoSize = true;
             this.fightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fightLabel.Location = new System.Drawing.Point(284, 175);
+            this.fightLabel.Location = new System.Drawing.Point(284, 176);
             this.fightLabel.Name = "fightLabel";
             this.fightLabel.Size = new System.Drawing.Size(50, 20);
             this.fightLabel.TabIndex = 58;

@@ -1,11 +1,10 @@
 C:\Users\Ryanh\Documents\GitHub\rpg\bin\Debug\rpg.exe
 C:\Users\Ryanh\Documents\GitHub\rpg\bin\Debug\rpg.pdb
-C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.battle.resources
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.Form1.resources
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.Form2.resources
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.Properties.Resources.resources
-C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.exe
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.pdb
+C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csprojResolveAssemblyReference.cache
+C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csproj.GenerateResource.Cache
