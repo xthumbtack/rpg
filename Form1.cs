@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace rpg
 {
@@ -14,10 +15,14 @@ namespace rpg
         public Form1()
         {
             InitializeComponent();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SoundPlayer player = new SoundPlayer(@"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\04.wav");
+            player.Play(); 
         }
 
         private void exit_button_Click(object sender, EventArgs e)

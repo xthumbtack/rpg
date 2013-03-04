@@ -66,6 +66,7 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="label1.cs" />
     <Compile Include="MessageBoxButton.cs" />
     <Compile Include="MessageBoxImage.cs" />
     <Compile Include="Objects.cs" />
@@ -107,7 +108,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\main menu.bmp" />
+    <Content Include="04.mid" />
+    <Content Include="Resources\04.wav" />
+    <Content Include="Resources\slime.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
