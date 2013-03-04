@@ -344,7 +344,7 @@
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 58;
             this.label1.Text = "Fight";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.fightButton_Click);
             // 
             // Form2
             // 
