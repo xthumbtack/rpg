@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rpg", "rpg\rpg.csproj", "{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}.Debug|x86.ActiveCfg = Debug|x86
+		{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}.Debug|x86.Build.0 = Debug|x86
+		{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}.Release|x86.ActiveCfg = Release|x86
+		{EFCD855A-954D-41C6-83A6-E93F40A0FFD7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
