@@ -49,9 +49,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.attackLabel = new System.Windows.Forms.Label();
+            this.magicLabel = new System.Windows.Forms.Label();
+            this.itemLabel = new System.Windows.Forms.Label();
             this.spot1Label = new System.Windows.Forms.Label();
             this.spot2Label = new System.Windows.Forms.Label();
             this.spot3Label = new System.Windows.Forms.Label();
@@ -96,6 +96,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(217, 207);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -280,38 +281,38 @@
             this.label12.TabIndex = 16;
             this.label12.Text = "MP";
             // 
-            // label13
+            // attackLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(23, 282);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 20);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "Attack";
+            this.attackLabel.AutoSize = true;
+            this.attackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attackLabel.ForeColor = System.Drawing.Color.White;
+            this.attackLabel.Location = new System.Drawing.Point(23, 282);
+            this.attackLabel.Name = "attackLabel";
+            this.attackLabel.Size = new System.Drawing.Size(61, 20);
+            this.attackLabel.TabIndex = 19;
+            this.attackLabel.Text = "Attack";
             // 
-            // label14
+            // magicLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(23, 324);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 20);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Magic";
+            this.magicLabel.AutoSize = true;
+            this.magicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.magicLabel.ForeColor = System.Drawing.Color.White;
+            this.magicLabel.Location = new System.Drawing.Point(23, 324);
+            this.magicLabel.Name = "magicLabel";
+            this.magicLabel.Size = new System.Drawing.Size(56, 20);
+            this.magicLabel.TabIndex = 20;
+            this.magicLabel.Text = "Magic";
             // 
-            // label15
+            // itemLabel
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(23, 364);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 20);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Item";
+            this.itemLabel.AutoSize = true;
+            this.itemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemLabel.ForeColor = System.Drawing.Color.White;
+            this.itemLabel.Location = new System.Drawing.Point(23, 364);
+            this.itemLabel.Name = "itemLabel";
+            this.itemLabel.Size = new System.Drawing.Size(45, 20);
+            this.itemLabel.TabIndex = 21;
+            this.itemLabel.Text = "Item";
             // 
             // spot1Label
             // 
@@ -320,9 +321,9 @@
             this.spot1Label.ForeColor = System.Drawing.Color.White;
             this.spot1Label.Location = new System.Drawing.Point(88, 222);
             this.spot1Label.Name = "spot1Label";
-            this.spot1Label.Size = new System.Drawing.Size(61, 18);
+            this.spot1Label.Size = new System.Drawing.Size(36, 18);
             this.spot1Label.TabIndex = 22;
-            this.spot1Label.Text = "label16";
+            this.spot1Label.Text = "Left";
             // 
             // spot2Label
             // 
@@ -331,9 +332,9 @@
             this.spot2Label.ForeColor = System.Drawing.Color.White;
             this.spot2Label.Location = new System.Drawing.Point(314, 222);
             this.spot2Label.Name = "spot2Label";
-            this.spot2Label.Size = new System.Drawing.Size(61, 18);
+            this.spot2Label.Size = new System.Drawing.Size(57, 18);
             this.spot2Label.TabIndex = 23;
-            this.spot2Label.Text = "label16";
+            this.spot2Label.Text = "Middle";
             // 
             // spot3Label
             // 
@@ -342,9 +343,9 @@
             this.spot3Label.ForeColor = System.Drawing.Color.White;
             this.spot3Label.Location = new System.Drawing.Point(544, 222);
             this.spot3Label.Name = "spot3Label";
-            this.spot3Label.Size = new System.Drawing.Size(61, 18);
+            this.spot3Label.Size = new System.Drawing.Size(47, 18);
             this.spot3Label.TabIndex = 24;
-            this.spot3Label.Text = "label16";
+            this.spot3Label.Text = "Right";
             // 
             // battle
             // 
@@ -355,9 +356,9 @@
             this.Controls.Add(this.spot3Label);
             this.Controls.Add(this.spot2Label);
             this.Controls.Add(this.spot1Label);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.itemLabel);
+            this.Controls.Add(this.magicLabel);
+            this.Controls.Add(this.attackLabel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -380,7 +381,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "battle";
             this.Text = "Battle!";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -412,9 +412,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label attackLabel;
+        private System.Windows.Forms.Label magicLabel;
+        private System.Windows.Forms.Label itemLabel;
         private System.Windows.Forms.Label spot1Label;
         private System.Windows.Forms.Label spot2Label;
         private System.Windows.Forms.Label spot3Label;

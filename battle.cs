@@ -12,7 +12,7 @@ namespace rpg
     public partial class battle : Form
     {
         // battle objects
-        int[,] enemy = new int[4, 4];
+        int[,] enemy = new int[3, 4] {{0,0,1,0}, {0,0,1,0}, {0,0,1,0}};
         int groupLvl = Objects.ryanhStats[5] + Objects.mattStats[5] + Objects.aungStats[5],
             spot = 0,
             slimeCounter = 0, thiefCounter = 0,
@@ -20,12 +20,14 @@ namespace rpg
             deathCounterRyanh = 0, deathCounterMatt = 0, deathCounterAung = 0;
         bool ryanhMove = false, mattMove = false, aungMove = false,
              enemy1Dead = false, enemy2Dead = false, enemy3Dead = false;
+
         
         // enemy, atk, hp, mp
         int[] slime = new int[4] { 1, 15, 80, 1 },
-              thief = { 2, 20, 120, 5 },
-              shala = { 3, 30, 200, 8 }, 
-              dragon = { 4, 50, 300, 8};
+              thief = { 2, 25, 120, 5 },
+              cacti = { 3, 50, 200, 8},
+              shala = { 4, 90, 300, 8 }, 
+              dragon = { 5, 100, 450, 8};
      
         public battle()
         {
@@ -55,7 +57,7 @@ namespace rpg
 
         void spawnEnemy()
         {
-            for (int x = 0; x < 4; x++)
+            for (int x = 0; x < 3; x++)
             {
                 switch (enemy[x,0])
                 {
@@ -163,22 +165,60 @@ namespace rpg
 
         void playerTurn()
         {
-            updateStatus();
-            if (battleTurn % 2 == 0)
+            updateStatus(); //check who is alive and able to move
+            while ((enemy1Dead == false) || (enemy2Dead == false) || (enemy3Dead == false))
             {
-                if (playerQueue == 1)
-                {
-                    MessageBox.Show("Ryanh's turn to fight!");
-                    this.ShowDialog();
-                    if(ryanhMove == true) playerQueue = 2;
-                }
-
+                ryanhTurn();
+                mattTurn();
+                aungTurn();
+                enemyTurn();
             }
-            else { enemyTurn(); }
         }
 
-        void enemyTurn()
+        bool ryanhTurn()
         {
+            updateStatus();
+            while (ryanhMove == false)
+            {
+                this.ShowDialog();
+                
+            }
+            return ryanhMove;
+        }
+
+        bool mattTurn()
+        {
+            updateStatus();
+            while (mattMove == false)
+            {
+                this.ShowDialog();
+            }
+            return mattMove;
+        }
+
+        bool aungTurn()
+        {
+            updateStatus();
+            return aungMove;
+        }
+
+
+        int enemyTurn()
+        {
+            updateStatus();
+            if (enemy1Dead == false) 
+            {
+                enemy[0, 1] = 0;
+            }
+            if (enemy2Dead == false)
+            {
+            }
+            if (enemy3Dead == false)
+            {
+            }
+
+
+            return battleTurn;
         }
 
         void updateStatus()
@@ -195,23 +235,49 @@ namespace rpg
                 ryanhMove = true;
                 deathCounterRyanh++;
                 if (deathCounterRyanh < 1) MessageBox.Show("Ryanh has fallen!");
+                if (playerQueue == 1) playerQueue = 2;
             }
             if (Objects.mattStats[4] < 1)
             {
                 mattMove = true;
                 deathCounterMatt++;
                 if (deathCounterMatt < 1) MessageBox.Show("Matt has fallen!");
+                if (playerQueue == 2) playerQueue = 3;
             }
             if (Objects.aungStats[4] < 1)
             {
                 aungMove = true;
                 deathCounterAung++;
                 if (deathCounterAung < 1) MessageBox.Show("Ryanh has fallen!");
+                if ((deathCounterRyanh > 1) & (deathCounterMatt > 1) & (deathCounterAung > 1)) gameOver();
+            }
+
+            if (enemy[0, 2] < 1)
+            {
+                MessageBox.Show(spot1Label.Text + " has been slain!");
+                enemy1Dead = true;
+            }
+            if (enemy[1, 2] < 1)
+            {
+                MessageBox.Show(spot2Label.Text + " has been slain!");
+                enemy2Dead = true;
+            }
+            if (enemy[2, 2] < 1)
+            {
+                MessageBox.Show(spot3Label.Text + " has been slain!");
+                enemy3Dead = true;
             }
         }
 
 
+        void gameOver()
+        {
+            MessageBox.Show("Our heroes have been slain! Game Over.");
+            Application.Exit();
+        }
 
-
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        }
     }  
 }
