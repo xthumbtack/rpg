@@ -52,6 +52,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.spot1Label = new System.Windows.Forms.Label();
+            this.spot2Label = new System.Windows.Forms.Label();
+            this.spot3Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -155,7 +158,6 @@
             this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 7;
             this.label1.Text = "100";
-            this.label1.TextChanged += new System.EventHandler(this.ryanhHP_change);
             // 
             // label2
             // 
@@ -167,7 +169,6 @@
             this.label2.Size = new System.Drawing.Size(39, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "100";
-            this.label2.TextChanged += new System.EventHandler(this.ryanhMP_change);
             // 
             // label3
             // 
@@ -179,7 +180,6 @@
             this.label3.Size = new System.Drawing.Size(39, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "100";
-            this.label3.TextChanged += new System.EventHandler(this.mattHP_change);
             // 
             // label4
             // 
@@ -313,12 +313,48 @@
             this.label15.TabIndex = 21;
             this.label15.Text = "Item";
             // 
+            // spot1Label
+            // 
+            this.spot1Label.AutoSize = true;
+            this.spot1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spot1Label.ForeColor = System.Drawing.Color.White;
+            this.spot1Label.Location = new System.Drawing.Point(88, 222);
+            this.spot1Label.Name = "spot1Label";
+            this.spot1Label.Size = new System.Drawing.Size(61, 18);
+            this.spot1Label.TabIndex = 22;
+            this.spot1Label.Text = "label16";
+            // 
+            // spot2Label
+            // 
+            this.spot2Label.AutoSize = true;
+            this.spot2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spot2Label.ForeColor = System.Drawing.Color.White;
+            this.spot2Label.Location = new System.Drawing.Point(314, 222);
+            this.spot2Label.Name = "spot2Label";
+            this.spot2Label.Size = new System.Drawing.Size(61, 18);
+            this.spot2Label.TabIndex = 23;
+            this.spot2Label.Text = "label16";
+            // 
+            // spot3Label
+            // 
+            this.spot3Label.AutoSize = true;
+            this.spot3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spot3Label.ForeColor = System.Drawing.Color.White;
+            this.spot3Label.Location = new System.Drawing.Point(544, 222);
+            this.spot3Label.Name = "spot3Label";
+            this.spot3Label.Size = new System.Drawing.Size(61, 18);
+            this.spot3Label.TabIndex = 24;
+            this.spot3Label.Text = "label16";
+            // 
             // battle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(692, 470);
+            this.Controls.Add(this.spot3Label);
+            this.Controls.Add(this.spot2Label);
+            this.Controls.Add(this.spot1Label);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -344,7 +380,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "battle";
             this.Text = "Battle!";
-            this.Load += new System.EventHandler(this.battle_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -379,5 +415,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label spot1Label;
+        private System.Windows.Forms.Label spot2Label;
+        private System.Windows.Forms.Label spot3Label;
     }
 }
