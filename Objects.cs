@@ -7,12 +7,15 @@ namespace rpg
 {
    public class Objects
     {
-       // stats
+       // stats str agl int hp mp lvl exp
        public static int[] ryanhStats = new int[7] { 10, 10, 10, 100, 100, 1, 0 },
                            mattStats = new int[7]  { 10, 10, 10, 100, 100, 1, 0 },
                            aungStats = new int[7]  { 10, 10, 10, 100, 100, 1, 0 };
-       
 
+       // items : power gloves, slippers of agility, mantle of intelligence
+       public static int[] items = new int[3] { 0, 0, 0, };
+
+       public static int gold = 0;
 
     }
 }

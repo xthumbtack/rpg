@@ -14,7 +14,12 @@ namespace rpg
         // battle objects
         int[,] enemy = new int[4, 4];
         int groupLvl = Objects.ryanhStats[5] + Objects.mattStats[5] + Objects.aungStats[5],
-            spot = 0, slimeCounter = 0, thiefCounter = 0;
+            spot = 0,
+            slimeCounter = 0, thiefCounter = 0,
+            battleTurn = 2, playerQueue = 1,
+            deathCounterRyanh = 0, deathCounterMatt = 0, deathCounterAung = 0;
+        bool ryanhMove = false, mattMove = false, aungMove = false,
+             enemy1Dead = false, enemy2Dead = false, enemy3Dead = false;
         
         // enemy, atk, hp, mp
         int[] slime = new int[4] { 1, 15, 80, 1 },
@@ -29,12 +34,7 @@ namespace rpg
 
             groupLvl /= 3;
             load_enemy();
-            
-            
         }
-
-
-
 
         public void load_enemy()
         {
@@ -45,8 +45,6 @@ namespace rpg
                 Random rdm_enemyNum = new Random();
                 int enemyNum = rdm_enemyNum.Next(1, 4);
 
-
-                
                 enemy[0,0] = rdm_enemy.Next(0, 2);
                 enemy[1,0] = rdm_enemy.Next(0, 2);
                 enemy[2,0] = rdm_enemy.Next(0, 2);
@@ -91,7 +89,7 @@ namespace rpg
                         break;
                 }
             }
-
+            playerTurn();
 
         }
 
@@ -163,14 +161,53 @@ namespace rpg
             }
         }
 
-        void updateStatus()
+        void playerTurn()
         {
+            updateStatus();
+            if (battleTurn % 2 == 0)
+            {
+                if (playerQueue == 1)
+                {
+                    MessageBox.Show("Ryanh's turn to fight!");
+                    this.ShowDialog();
+                    if(ryanhMove == true) playerQueue = 2;
+                }
+
+            }
+            else { enemyTurn(); }
+        }
+
+        void enemyTurn()
+        {
+        }
+
+        void updateStatus()
+        {          
             label1.Text = Objects.ryanhStats[3].ToString();
             label2.Text = Objects.ryanhStats[4].ToString();
             label3.Text = Objects.mattStats[3].ToString();
             label4.Text = Objects.mattStats[4].ToString();
             label5.Text = Objects.aungStats[3].ToString();
             label6.Text = Objects.aungStats[4].ToString();
+
+            if (Objects.ryanhStats[4] < 1)
+            {
+                ryanhMove = true;
+                deathCounterRyanh++;
+                if (deathCounterRyanh < 1) MessageBox.Show("Ryanh has fallen!");
+            }
+            if (Objects.mattStats[4] < 1)
+            {
+                mattMove = true;
+                deathCounterMatt++;
+                if (deathCounterMatt < 1) MessageBox.Show("Matt has fallen!");
+            }
+            if (Objects.aungStats[4] < 1)
+            {
+                aungMove = true;
+                deathCounterAung++;
+                if (deathCounterAung < 1) MessageBox.Show("Ryanh has fallen!");
+            }
         }
 
 
