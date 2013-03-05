@@ -14,7 +14,7 @@ namespace rpg
         // battle objects
         int[,] enemy = new int[4, 4];
         int groupLvl = Objects.ryanhStats[5] + Objects.mattStats[5] + Objects.aungStats[5],
-            spot = 0;
+            spot = 0, slimeCounter = 0, thiefCounter = 0;
         
         // enemy, atk, hp, mp
         int[] slime = new int[4] { 1, 15, 80, 1 },
@@ -65,18 +65,15 @@ namespace rpg
                         for (int y = 1; y < 4; y++)
                         {
                             enemy[x, y] = slime[y];
-                            MessageBox.Show(slime[y].ToString());
-                            spot = x;
-                            enemySlime(spot);
                         }
+                        enemySlime();
                         break;
                     case 1:
                         for (int y = 1; y < 4; y++)
                         {
                             enemy[x, y] = thief[y];
-                            MessageBox.Show(thief[y].ToString());
                         }
-
+                        enemyThief();
                         break;
 
                     case 2:
@@ -98,18 +95,72 @@ namespace rpg
 
         }
 
-        void enemySlime(int spot)
+        void enemySlime()
         {
-            if (spot == 1)
+            spot++;
+            if (spot < 4)
             {
-                
-                Image image1 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
-                pictureBox1.BackgroundImage = image1;
-            }
-            if (spot == 2)
-            {
-            }
+                slimeCounter++;
+                if (spot == 1)
+                {
 
+                    Image image1 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
+                    pictureBox1.BackgroundImage = image1;
+                    spot1Label.Text = "Slime 1";
+                }
+                if (spot == 2)
+                {
+                    Image image2 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
+                    pictureBox2.BackgroundImage = image2;
+                    if (slimeCounter > 1) spot2Label.Text = "Slime 2";
+                    else if (slimeCounter == 1) spot2Label.Text = "Slime 1"; 
+                }
+                if (spot == 3)
+                {
+                    Image image3 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\slime.jpg");
+                    pictureBox3.BackgroundImage = image3;
+                    spot3Label.Text = "Slime 1";
+                    if (slimeCounter > 1)
+                    {
+                        spot3Label.Text = "Slime 2";
+                        if (slimeCounter > 2)
+                        {
+                            spot3Label.Text = "Slime 3";
+                        }
+                    }
+                    else if ( slimeCounter == 1) spot3Label.Text = "Slime 1";
+                } 
+            }
+        }
+
+        void enemyThief()
+        {
+            spot++;
+            if (spot < 4)
+            {
+                thiefCounter++;
+                if (spot == 1)
+                {
+                    Image image1 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\thief.jpg");
+                    pictureBox1.BackgroundImage = image1;
+                    spot1Label.Text = "Thief 1";
+                }
+                if (spot == 2)
+                {
+                    Image image2 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\thief.jpg");
+                    pictureBox2.BackgroundImage = image2;
+                    if (thiefCounter == 2) spot2Label.Text = "Thief 2";
+                    else if (thiefCounter == 1) spot1Label.Text = "Thief 1";
+                }
+                else if (spot == 3)
+                {
+                    Image image3 = Image.FromFile("C:\\Users\\Ryanh\\Documents\\GitHub\\rpg\\Resources\\thief.jpg");
+                    pictureBox3.BackgroundImage = image3;
+                    spot3Label.Text = "Thief 1";
+                    if (thiefCounter == 2) spot3Label.Text = "Thief 2";
+                    else if (thiefCounter == 3) spot3Label.Text = "Thief 3";
+                } 
+            }
         }
 
         void updateStatus()
@@ -124,42 +175,6 @@ namespace rpg
 
 
 
-        public void ryanhHP_change(object sender, EventArgs e)
-        {
-            label1.Text = Objects.ryanhStats[3].ToString();
-            label1.Refresh();
 
-        }
-
-        private void ryanhMP_change(object sender, EventArgs e)
-        {
-            label2.Text = Objects.ryanhStats[4].ToString();
-        }
-
-        private void mattHP_change(object sender, EventArgs e)
-        {
-            label3.Text = Objects.mattStats[3].ToString();
-        }
-
-        private void mattMP_change(object sender, EventArgs e)
-        {
-            label4.Text = Objects.mattStats[4].ToString();
-        }
-
-        private void aungHP_change(object sender, EventArgs e)
-        {
-            label5.Text = Objects.aungStats[3].ToString();
-        }
-
-        private void aungMP_change(object sender, EventArgs e)
-        {
-            label6.Text = Objects.aungStats[4].ToString();
-        }
-
-
-        private void battle_Load(object sender, EventArgs e)
-        {
-
-        }
     }  
 }
