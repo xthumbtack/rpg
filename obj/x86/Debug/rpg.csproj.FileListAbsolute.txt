@@ -8,3 +8,5 @@ C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.exe
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.pdb
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csprojResolveAssemblyReference.cache
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csproj.GenerateResource.Cache
+C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csproj.ResolveComReference.cache

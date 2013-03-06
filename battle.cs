@@ -50,7 +50,6 @@ namespace rpg
                 enemy[0,0] = rdm_enemy.Next(0, 2);
                 enemy[1,0] = rdm_enemy.Next(0, 2);
                 enemy[2,0] = rdm_enemy.Next(0, 2);
-
             }
             spawnEnemy();
         }
@@ -180,6 +179,8 @@ namespace rpg
             updateStatus();
             while (ryanhMove == false)
             {
+                MessageBox.Show("Ryanh's turn to fight!");
+                playerQueue = 1;
                 this.ShowDialog();
                 
             }
@@ -191,6 +192,7 @@ namespace rpg
             updateStatus();
             while (mattMove == false)
             {
+                playerQueue = 2;
                 this.ShowDialog();
             }
             return mattMove;
@@ -278,6 +280,8 @@ namespace rpg
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            if (playerQueue == 1) ryanhMove = true;
+            if (playerQueue == 2) mattMove = true;
         }
     }  
 }

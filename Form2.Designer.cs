@@ -121,157 +121,161 @@
             // trainLabel
             // 
             this.trainLabel.AutoSize = true;
-            this.trainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trainLabel.Location = new System.Drawing.Point(284, 206);
             this.trainLabel.Name = "trainLabel";
-            this.trainLabel.Size = new System.Drawing.Size(49, 20);
+            this.trainLabel.Size = new System.Drawing.Size(66, 25);
             this.trainLabel.TabIndex = 59;
             this.trainLabel.Text = "Train";
             this.trainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.trainLabel.MouseEnter += new System.EventHandler(this.train_mouseEnter);
             // 
             // restLabel
             // 
             this.restLabel.AutoSize = true;
-            this.restLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.restLabel.Location = new System.Drawing.Point(284, 267);
             this.restLabel.Name = "restLabel";
-            this.restLabel.Size = new System.Drawing.Size(47, 20);
+            this.restLabel.Size = new System.Drawing.Size(60, 25);
             this.restLabel.TabIndex = 62;
             this.restLabel.Text = "Rest";
             this.restLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.restLabel.Click += new System.EventHandler(this.restButton_Click);
+            this.restLabel.MouseEnter += new System.EventHandler(this.rest_mouseEnter);
             // 
             // shopLabel
             // 
             this.shopLabel.AutoSize = true;
-            this.shopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shopLabel.Location = new System.Drawing.Point(284, 237);
             this.shopLabel.Name = "shopLabel";
-            this.shopLabel.Size = new System.Drawing.Size(51, 20);
+            this.shopLabel.Size = new System.Drawing.Size(66, 25);
             this.shopLabel.TabIndex = 63;
             this.shopLabel.Text = "Shop";
             this.shopLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.shopLabel.Click += new System.EventHandler(this.shopButton_Click);
+            this.shopLabel.MouseEnter += new System.EventHandler(this.shop_mouseEnter);
             // 
             // fightLabel
             // 
             this.fightLabel.AutoSize = true;
-            this.fightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fightLabel.Location = new System.Drawing.Point(284, 176);
             this.fightLabel.Name = "fightLabel";
-            this.fightLabel.Size = new System.Drawing.Size(50, 20);
+            this.fightLabel.Size = new System.Drawing.Size(65, 25);
             this.fightLabel.TabIndex = 58;
             this.fightLabel.Text = "Fight";
             this.fightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fightLabel.Click += new System.EventHandler(this.fightButton_Click);
+            this.fightLabel.MouseEnter += new System.EventHandler(this.fight_mouseEnter);
             // 
             // hpLabel
             // 
             this.hpLabel.AutoSize = true;
-            this.hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hpLabel.Location = new System.Drawing.Point(446, 30);
             this.hpLabel.Name = "hpLabel";
-            this.hpLabel.Size = new System.Drawing.Size(33, 20);
+            this.hpLabel.Size = new System.Drawing.Size(43, 25);
             this.hpLabel.TabIndex = 64;
             this.hpLabel.Text = "HP";
             // 
             // mpLabel
             // 
             this.mpLabel.AutoSize = true;
-            this.mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mpLabel.Location = new System.Drawing.Point(485, 30);
             this.mpLabel.Name = "mpLabel";
-            this.mpLabel.Size = new System.Drawing.Size(34, 20);
+            this.mpLabel.Size = new System.Drawing.Size(46, 25);
             this.mpLabel.TabIndex = 65;
             this.mpLabel.Text = "MP";
             // 
             // ryanhLabel
             // 
             this.ryanhLabel.AutoSize = true;
-            this.ryanhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ryanhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ryanhLabel.Location = new System.Drawing.Point(306, 53);
             this.ryanhLabel.Name = "ryanhLabel";
-            this.ryanhLabel.Size = new System.Drawing.Size(60, 20);
+            this.ryanhLabel.Size = new System.Drawing.Size(79, 25);
             this.ryanhLabel.TabIndex = 66;
             this.ryanhLabel.Text = "Ryanh";
             // 
             // mattLabel
             // 
             this.mattLabel.AutoSize = true;
-            this.mattLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mattLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mattLabel.Location = new System.Drawing.Point(306, 73);
             this.mattLabel.Name = "mattLabel";
-            this.mattLabel.Size = new System.Drawing.Size(45, 20);
+            this.mattLabel.Size = new System.Drawing.Size(58, 25);
             this.mattLabel.TabIndex = 67;
             this.mattLabel.Text = "Matt";
             // 
             // aungLabel
             // 
             this.aungLabel.AutoSize = true;
-            this.aungLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aungLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aungLabel.Location = new System.Drawing.Point(306, 93);
             this.aungLabel.Name = "aungLabel";
-            this.aungLabel.Size = new System.Drawing.Size(51, 20);
+            this.aungLabel.Size = new System.Drawing.Size(66, 25);
             this.aungLabel.TabIndex = 68;
             this.aungLabel.Text = "Aung";
             // 
             // ryanh_hpLabel
             // 
             this.ryanh_hpLabel.AutoSize = true;
-            this.ryanh_hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ryanh_hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ryanh_hpLabel.Location = new System.Drawing.Point(419, 53);
             this.ryanh_hpLabel.Name = "ryanh_hpLabel";
-            this.ryanh_hpLabel.Size = new System.Drawing.Size(39, 20);
+            this.ryanh_hpLabel.Size = new System.Drawing.Size(51, 25);
             this.ryanh_hpLabel.TabIndex = 69;
             this.ryanh_hpLabel.Text = "100";
             // 
             // matt_hpLabel
             // 
             this.matt_hpLabel.AutoSize = true;
-            this.matt_hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matt_hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matt_hpLabel.Location = new System.Drawing.Point(419, 73);
             this.matt_hpLabel.Name = "matt_hpLabel";
-            this.matt_hpLabel.Size = new System.Drawing.Size(39, 20);
+            this.matt_hpLabel.Size = new System.Drawing.Size(51, 25);
             this.matt_hpLabel.TabIndex = 70;
             this.matt_hpLabel.Text = "100";
             // 
             // aung_hpLabel
             // 
             this.aung_hpLabel.AutoSize = true;
-            this.aung_hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aung_hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aung_hpLabel.Location = new System.Drawing.Point(419, 93);
             this.aung_hpLabel.Name = "aung_hpLabel";
-            this.aung_hpLabel.Size = new System.Drawing.Size(39, 20);
+            this.aung_hpLabel.Size = new System.Drawing.Size(51, 25);
             this.aung_hpLabel.TabIndex = 71;
             this.aung_hpLabel.Text = "100";
             // 
             // ryanh_mpLabel
             // 
             this.ryanh_mpLabel.AutoSize = true;
-            this.ryanh_mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ryanh_mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ryanh_mpLabel.Location = new System.Drawing.Point(485, 50);
             this.ryanh_mpLabel.Name = "ryanh_mpLabel";
-            this.ryanh_mpLabel.Size = new System.Drawing.Size(39, 20);
+            this.ryanh_mpLabel.Size = new System.Drawing.Size(51, 25);
             this.ryanh_mpLabel.TabIndex = 72;
             this.ryanh_mpLabel.Text = "100";
             // 
             // matt_mpLabel
             // 
             this.matt_mpLabel.AutoSize = true;
-            this.matt_mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matt_mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matt_mpLabel.Location = new System.Drawing.Point(485, 70);
             this.matt_mpLabel.Name = "matt_mpLabel";
-            this.matt_mpLabel.Size = new System.Drawing.Size(39, 20);
+            this.matt_mpLabel.Size = new System.Drawing.Size(51, 25);
             this.matt_mpLabel.TabIndex = 73;
             this.matt_mpLabel.Text = "100";
             // 
             // aung_mpLabel
             // 
             this.aung_mpLabel.AutoSize = true;
-            this.aung_mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aung_mpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aung_mpLabel.Location = new System.Drawing.Point(485, 93);
             this.aung_mpLabel.Name = "aung_mpLabel";
-            this.aung_mpLabel.Size = new System.Drawing.Size(39, 20);
+            this.aung_mpLabel.Size = new System.Drawing.Size(51, 25);
             this.aung_mpLabel.TabIndex = 74;
             this.aung_mpLabel.Text = "100";
             // 

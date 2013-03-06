@@ -15,23 +15,32 @@ namespace rpg
         public Form1()
         {
             InitializeComponent();
-
+            playMusic();
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SoundPlayer player = new SoundPlayer(@"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\04.wav");
-            player.Play(); 
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\04.wav";
+        }
+
+        void playMusic()
+        {
+            
         }
 
         private void exit_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
         }
 
         private void start_button_Click(object sender, EventArgs e)
         {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
             // hide main form
             this.Hide();
 
@@ -41,6 +50,18 @@ namespace rpg
 
             // close application
             this.Close();
+        }
+
+        private void start_mouseEnter(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
+        }
+
+        private void exit_mouseEnter(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
         }
 
     }

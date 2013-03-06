@@ -45,6 +45,7 @@
             this.start_button.Text = "Start";
             this.start_button.UseVisualStyleBackColor = false;
             this.start_button.Click += new System.EventHandler(this.start_button_Click);
+            this.start_button.MouseEnter += new System.EventHandler(this.start_mouseEnter);
             // 
             // exit_button
             // 
@@ -57,15 +58,16 @@
             this.exit_button.Text = "Exit";
             this.exit_button.UseVisualStyleBackColor = false;
             this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
+            this.exit_button.MouseEnter += new System.EventHandler(this.exit_mouseEnter);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(261, 96);
+            this.label1.Location = new System.Drawing.Point(217, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 73);
+            this.label1.Size = new System.Drawing.Size(256, 108);
             this.label1.TabIndex = 2;
             this.label1.Text = "RPG";
             // 

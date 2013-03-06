@@ -53,6 +53,8 @@ namespace rpg
         }
         private void fightButton_Click(object sender, EventArgs e)
         {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
             // hide main form
             this.Hide();
 
@@ -65,17 +67,45 @@ namespace rpg
         }
         private void trainButton_Click(object sender, EventArgs e)
         {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
         }
 
 
         private void restButton_Click(object sender, EventArgs e)
         {
-
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
         }
 
         private void shopButton_Click(object sender, EventArgs e)
         {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
+        }
 
+        private void fight_mouseEnter(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
+        }
+
+        private void train_mouseEnter(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
+        }
+
+        private void shop_mouseEnter(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
+        }
+
+        private void rest_mouseEnter(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
         }
 
     }
