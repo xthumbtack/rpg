@@ -19,7 +19,8 @@ namespace rpg
             battleTurn = 2, playerQueue = 1,
             deathCounterRyanh = 0, deathCounterMatt = 0, deathCounterAung = 0;
         bool ryanhMove = false, mattMove = false, aungMove = false,
-             enemy1Dead = false, enemy2Dead = false, enemy3Dead = false;
+             enemy1Dead = false, enemy2Dead = false, enemy3Dead = false,
+             attack = false, magic = false, item = false;
 
         
         // enemy, atk, hp, mp
@@ -193,7 +194,7 @@ namespace rpg
             while (mattMove == false)
             {
                 playerQueue = 2;
-                this.ShowDialog();
+                //this.ShowDialog();
             }
             return mattMove;
         }
@@ -280,8 +281,56 @@ namespace rpg
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (playerQueue == 1) ryanhMove = true;
+            if ((playerQueue == 1) & (ryanhMove == false) & attack == true)
+            {
+                enemy[0, 2] -= Objects.ryanhBattle[0];
+                ryanhMove = true;
+                attack = false;
+                playerTurn();
+            }
             if (playerQueue == 2) mattMove = true;
+        }
+
+        private void spot1Label_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void spot2Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spot3Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void attackLabel_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
+            attack = true;
+        }
+
+        private void magicLabel_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
+        }
+
+        private void itemLabel_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\ok.wav";
         }
     }  
 }

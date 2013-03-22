@@ -106,6 +106,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(217, 207);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -115,6 +116,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(217, 207);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // ryanhLabel
             // 
@@ -291,6 +293,7 @@
             this.attackLabel.Size = new System.Drawing.Size(61, 20);
             this.attackLabel.TabIndex = 19;
             this.attackLabel.Text = "Attack";
+            this.attackLabel.Click += new System.EventHandler(this.attackLabel_Click);
             // 
             // magicLabel
             // 
@@ -302,6 +305,7 @@
             this.magicLabel.Size = new System.Drawing.Size(56, 20);
             this.magicLabel.TabIndex = 20;
             this.magicLabel.Text = "Magic";
+            this.magicLabel.Click += new System.EventHandler(this.magicLabel_Click);
             // 
             // itemLabel
             // 
@@ -313,6 +317,7 @@
             this.itemLabel.Size = new System.Drawing.Size(45, 20);
             this.itemLabel.TabIndex = 21;
             this.itemLabel.Text = "Item";
+            this.itemLabel.Click += new System.EventHandler(this.itemLabel_Click);
             // 
             // spot1Label
             // 
@@ -324,6 +329,7 @@
             this.spot1Label.Size = new System.Drawing.Size(36, 18);
             this.spot1Label.TabIndex = 22;
             this.spot1Label.Text = "Left";
+            this.spot1Label.Click += new System.EventHandler(this.spot1Label_Click);
             // 
             // spot2Label
             // 
@@ -335,6 +341,7 @@
             this.spot2Label.Size = new System.Drawing.Size(57, 18);
             this.spot2Label.TabIndex = 23;
             this.spot2Label.Text = "Middle";
+            this.spot2Label.Click += new System.EventHandler(this.spot2Label_Click);
             // 
             // spot3Label
             // 
@@ -346,6 +353,7 @@
             this.spot3Label.Size = new System.Drawing.Size(47, 18);
             this.spot3Label.TabIndex = 24;
             this.spot3Label.Text = "Right";
+            this.spot3Label.Click += new System.EventHandler(this.spot3Label_Click);
             // 
             // battle
             // 
@@ -353,12 +361,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(692, 470);
+            this.Controls.Add(this.attackLabel);
             this.Controls.Add(this.spot3Label);
             this.Controls.Add(this.spot2Label);
             this.Controls.Add(this.spot1Label);
             this.Controls.Add(this.itemLabel);
             this.Controls.Add(this.magicLabel);
-            this.Controls.Add(this.attackLabel);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);

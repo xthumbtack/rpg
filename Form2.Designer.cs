@@ -83,7 +83,7 @@
             // 
             this.rectangleShape1.BorderColor = System.Drawing.Color.White;
             this.rectangleShape1.BorderWidth = 3;
-            this.rectangleShape1.Location = new System.Drawing.Point(258, 20);
+            this.rectangleShape1.Location = new System.Drawing.Point(226, 18);
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(425, 114);
             // 

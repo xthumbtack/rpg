@@ -16,6 +16,7 @@ namespace rpg
         {
             InitializeComponent();
             playMusic();
+           
 
         }
 
@@ -63,6 +64,5 @@ namespace rpg
             var player = new WMPLib.WindowsMediaPlayer();
             player.URL = @"C:\Users\Ryanh\Documents\GitHub\rpg\Resources\menumove.wav";
         }
-
     }
 }
