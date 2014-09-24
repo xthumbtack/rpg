@@ -107,7 +107,6 @@
   <ItemGroup>
     <Content Include="Resources\04.wav" />
     <Content Include="Resources\slime.jpg" />
-    <Content Include="Resources\thief.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
