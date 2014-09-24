@@ -8,3 +8,11 @@ C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.exe
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.pdb
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csprojResolveAssemblyReference.cache
 C:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csproj.GenerateResource.Cache
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.exe
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.pdb
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csprojResolveAssemblyReference.cache
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.battle.resources
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.Form1.resources
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.Form2.resources
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.Properties.Resources.resources
+D:\Users\Ryanh\Documents\GitHub\rpg\obj\x86\Debug\rpg.csproj.GenerateResource.Cache
